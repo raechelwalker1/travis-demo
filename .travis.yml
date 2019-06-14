@@ -15,4 +15,5 @@ script:
   - sudo ln -s /usr/bin/gcc-4.9 /usr/local/bin/gcc
   - sudo ln -s /usr/bin/g++-4.9 /usr/local/bin/g++
 
-  - gcc -v && g++ -v
+  - gcc -v
+  - g++ -v
