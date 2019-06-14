@@ -1,0 +1,17 @@
+dist: trusty
+sudo: required
+language: cpp
+compiler: gcc
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - gcc-4.9
+      - g++-4.9
+
+script:
+  - sudo ln -s /usr/bin/gcc-4.9 /usr/local/bin/gcc
+  - sudo ln -s /usr/bin/g++-4.9 /usr/local/bin/g++
+
+  - gcc -v && g++ -v
