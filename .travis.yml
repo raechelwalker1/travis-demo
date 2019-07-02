@@ -1,11 +1,7 @@
 dist: trusty
 sudo: required
 os: osx
-language: 
-  - cpp
-  - r: release
-
-r_packages: RTest
+language: r
 
 script:
   - Rscript
