@@ -1,6 +1,6 @@
 dist: trusty
 sudo: required
-os: linux
+os: osx
 language: 
   - cpp
   - r
