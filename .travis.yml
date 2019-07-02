@@ -1,21 +1,9 @@
 dist: trusty
 sudo: required
 os: linux
-language: cpp
-addons:
-  apt:
-    sources:
-      - ubuntu-toolchain-r-test
-    packages:
-      - gcc-4.9
-      - g++-4.9
+language: 
+  - cpp
+  - r
 
 script:
-  - sudo ln -s /usr/bin/gcc-4.9 /usr/local/bin/gcc
-  - sudo ln -s /usr/bin/g++-4.9 /usr/local/bin/g++
-
-  - export CC_FOR_BUILD=/usr/local/bin/gcc
-  - export CXX_FOR_BUILD=/usr/local/bin/g++
-
-  - $CC_FOR_BUILD -v
-  - $CXX_FOR_BUILD -v
+  - Rscript
