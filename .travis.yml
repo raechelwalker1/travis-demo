@@ -3,7 +3,7 @@ sudo: required
 os: osx
 language: 
   - cpp
-  - r
+  - r: release
 
 script:
   - Rscript
