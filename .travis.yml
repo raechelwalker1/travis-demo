@@ -1,7 +1,8 @@
 dist: trusty
 sudo: required
 os: osx
-language: r
+language: c++
 
 script:
+  - brew install r
   - Rscript
