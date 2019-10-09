@@ -16,5 +16,5 @@ install:
 
 script:
   - source activate test-env
-  - nosetest -v travis_demo --with-coverage --cover-package=travis_demo
+  - nosetests -v travis_demo --with-coverage --cover-package=travis_demo
   - flake8 travis_demo setup.py
