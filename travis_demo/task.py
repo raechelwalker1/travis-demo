@@ -10,7 +10,7 @@ def sum_plus_one(x1, x2):
     x1, x2 : array_like
         The arrays to be added and have 1 added to their elements
 
-    
+
     Returns
     -------
     ndarray or scalar
@@ -19,4 +19,3 @@ def sum_plus_one(x1, x2):
 
     """
     return np.add(x1, x2) + 1
-

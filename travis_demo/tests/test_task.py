@@ -4,7 +4,7 @@ import numpy as np
 
 
 class TestTask(unittest.TestCase):
-    
+
     def test_task_vectors(self):
         a = np.array([1, 2, 3, 4])
         b = np.array([5, 6, 7, 8])
@@ -18,4 +18,3 @@ class TestTask(unittest.TestCase):
         exp = 4
         obs = task.sum_plus_one(a, b)
         self.assertAlmostEqual(exp, obs)
-
