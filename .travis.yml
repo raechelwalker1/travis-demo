@@ -9,7 +9,7 @@ before_install:
   - conda info -a
 
 install:
-  - conda create -n test-env python=3.6
+  - conda create -n test-env --file ci/travis_demo.yml
   - conda install -n test-env nose flake8
   - conda activate test-env
   - pip install -e .
